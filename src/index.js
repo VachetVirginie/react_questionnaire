@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import store from './stores/index';
+import store from './store/index';
 import Questionnaire from './containers/Questionnaire';
 
 
