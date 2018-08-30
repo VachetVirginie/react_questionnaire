@@ -1,4 +1,4 @@
-import * as types from "../constants/ActionTypes";
+import * as types from '../constants/ActionTypes'
 
 const initialState = {
     questionLoader: false,
@@ -12,18 +12,14 @@ const questionnaireReducer = (state = initialState, action) => {
 
         case types.ADD_QUESTIONS:
             return {
-                ...state,
-                questions: action.questions
-            }
+            };
         case types.UPDATE_QUESTION_LOADER:
             return{
-                ...state,
-                questionLoader: action.display
             }
 
         case types.CHANGE_SLIDE:
-            return {
-            }
+             return {
+             }
         case types.UPDATE_CHOICE:
             const filteredChoices = (state.choices.filter(choice => choice.id_question !== action.id_question));
             return {
